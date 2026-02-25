@@ -41,11 +41,11 @@
         <script>
         function createSnow() {
             const snowContainer = document.getElementById('snow-container');
-            for (let i = 0; i < 80; i++) {
+            for (let i = 0; i < 150; i++) {
                 const spark = document.createElement('div');
                 spark.classList.add('spark');
                 spark.style.left = Math.random() * 100 + 'vw';
-                spark.style.animationDuration = Math.random() * 10 + 10 + 's';
+                spark.style.animationDuration = Math.random() * 5 + 10 + 's';
                 spark.style.animationDelay = Math.random() * 10 + 's';
                 const size = Math.random() * 2 + 1 + 'px';
                 spark.style.width = size;
