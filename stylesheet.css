@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+::selection {
+    color: black;
+    background-color: #bea060;
+}
+header {
+    width: 100%;
+    height: 160vh;
+    background-color: black;
+    display: flex;
+}
+.header-left-side {
+    padding: 0 0 0 90px;
+    color: white;
+}
+.header-left-side h1 {
+    color: #bea060;
+    line-height:1.2em;
+    font-size: 78px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-weight:  400 !important;
+}
+.header-left-side h2 {
+    color: #bea060;
+    font-family: "Roboto", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+.header-left-side p {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: #c1bfbf;
+    line-height: 2;
+}
+button {
+    padding: 20px 10px;
+    border: 2px solid black;
+    background: transparent;
+    width: 47%;
+    color: white;
+    margin-right: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #bea060;
+    color: black;
+    border: 2px solid #bea060;
+    transition: 0.7s;
+}
+.btn {
+    width: 97%;
+    background-color: black;
+}
+.header-left-side h3 {
+    color: #c1bfbf;
+    padding-top: 80px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+.header-right-side img {
+    width: 670px;
+    height: 884px;
+    margin-top: 15%;
+}
+.electric-snow {
+    position: fixed; /* Agar salju tetap di layar saat di-scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Agar salju tidak menghalangi klik tombol */
+    z-index: 1; /* Di atas background, di bawah tulisan */
+}
+
+.spark {
+    position: absolute;
+    background: #bea060; /* Warna emas disamakan dengan tema tugasmu */
+    border-radius: 50%;
+    box-shadow: 0 0 4px #da9601;
+    animation: fall linear infinite;
+}
+
+/* Gerakan jatuh */
+@keyframes fall {
+    to {
+        transform: translateY(105vh); /* Jatuh sampai melewati bawah layar */
+        opacity: 0;
+    }
+}
