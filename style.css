@@ -35,7 +35,7 @@ header {
 }
 .header-left-side h2 {
     color: #bea060;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 26px;
     font-weight: 500;
     line-height: 1.2em;
@@ -58,7 +58,7 @@ button {
     width: 47%;
     color: white;
     margin-right: 15px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
@@ -85,27 +85,29 @@ button:hover {
     margin-top: 15%;
 }
 .electric-snow {
-    position: fixed; /* Agar salju tetap di layar saat di-scroll */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* Agar salju tidak menghalangi klik tombol */
-    z-index: 1; /* Di atas background, di bawah tulisan */
+    pointer-events: none; 
+    z-index: 1; 
 }
 
 .spark {
     position: absolute;
-    background: #bea060; /* Warna emas disamakan dengan tema tugasmu */
+    background: #bea060; 
     border-radius: 50%;
     box-shadow: 0 0 4px #da9601;
     animation: fall linear infinite;
 }
 
-/* Gerakan jatuh */
 @keyframes fall {
+    from {
+        opacity: 1;
+    }
     to {
-        transform: translateY(105vh); /* Jatuh sampai melewati bawah layar */
+        transform: translateY(105vh); 
         opacity: 0;
     }
 }
